@@ -1,0 +1,79 @@
+
+//Obs: Pra representar o log to escrevendo assim:
+//	LogB(N) -> Log de 'N' na base 'B'
+
+Questao 1: =============================================================
+ a) O(max(N,M))
+ b) O(N^2)
+ c) O(N)
+
+Questao 2: =============================================================
+
+	Letra A:
+		Termo dominante: 0.001*n^5
+		O(n^5)
+	Letra B:
+		Termo dominante: 500n
+		O(n)
+	Letra C:
+		Termo dominante: 2.5*n^1.75
+		O(n^1.75)
+	Letra D:
+		Termo dominante: n² * log2(n)
+		O(n^2) * log2(n)
+	Letra E:
+		Termo dominante: n*log2(n)
+		O(n * (log2(n))
+	Letra F:
+		Termo dominante: 3*log8(n)
+		O(log8(n))
+	Letra G:
+		Termo dominante: 0.01n²
+		O(n²)
+	Letra H:
+		Termo dominante: 100n²
+		O(n²)
+	Letra I:
+		Termo dominante: n^1.25
+		O(n^1.25)
+	Letra J:
+		Termo dominante: n*(log2(n))²
+		O(n*(log2(n))²)
+	Letra K:
+		Termo dominante: n³
+		O(n³)
+	Letra L:
+		Termo dominante: 0.003*log4(n)
+		O(log4(n))
+
+		
+Questao 3: =============================================================
+
+	i) O(N), pois dado um vetor de tamanho N, no pior caso esse método 
+	teria que incrementar o contador de 0 até N-1 se o elemento desejado 
+	estivesse na última posição.
+
+	ii) O(N), funciona basicamente como o método anterior, só que com um 
+	loop for. Ele vai iterar de 0 até N-1 no pior caso se o elemento 
+	desejado estiver na última posição
+
+	iii) O(log2(N)). Claramente, esse algoritmo é uma busca binária. No
+	pior caso, ele vai "dividir" pela metade o array 'i' vezes até que 
+	sobre apenas um elemento para ser checado. Para o pior caso:
+
+		Primeiro: N/2^i = 1 
+			Ou seja, N dividido 'i' vezes pela metade sobra 1 elemento
+		Logo: 
+			N = 2^i, o que equivale a dizer que log2(N) = i.
+		Portanto, no pior caso, dividimos pela metade log2(N) vezes.
+
+Questao 5: =============================================================
+
+Na primeira iteração do primeiro loop, o segundo loop faz (N-1) comparações. 
+Na segunda iteração, o segundo loop faz (N-2) comparações.
+E assim sucessivamente até que no final ele faz 1 comparação. Ou seja, matematicamente, 
+o numero de comparações fica como a soma de: 
+	(N-1) + (N-2) + (N-3) + ... + 1. 
+E isso é uma progressão aritmética, portanto a soma equivale a N(N-1 + 1)/2. Dessa forma,
+descartando as constantes como manda a notação big-o, temos que a complexidade 
+assintótica fica de O(N²)

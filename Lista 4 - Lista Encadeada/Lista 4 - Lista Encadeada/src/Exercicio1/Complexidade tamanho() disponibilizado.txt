@@ -1,0 +1,8 @@
+A complexidade do método tamanho() presente na classe Lista disponibilidade é O(N).
+Dado uma lista encadeada de tamanho N, eu começo do elemento 'prim' e vou incrementando a variavel
+tam - inicialmente declarada valendo 0 - até chegar no N-ésimo elemento. Ou seja, vou de um em um.
+Portanto, a complexidade é O(N).
+
+E sim, é possível melhorá-lo. Basta que a minha classe tenha um atributo 'tamanho', que vai ser
+atualizado no momento em que eu adiciono ou removo um elemento da lista. Assim, a complexidade
+do meu método que retorna o tamanho da minha lista fica em O(1), pois seria basicamente um getter.

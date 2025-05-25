@@ -1,0 +1,23 @@
+Função Hash = 11 * k % M
+M = 5
+
+Hash para:
+	E = 11 * 5 % 5 = 55 % 5 = 0
+	A = 11 % 5 = 1
+	S = 11 * 18 % 5 = 3
+	Y = 11 * 24 % 5 = 4
+	Q = 11 * 17 % 5 = 2
+	U = 11 * 21 % 5 = 1
+	T = 11 * 20 % 5 = 1
+	I = 11 * 9 % 5 = 4
+	O = 11 * 15 % 5 = 1
+	N = 11 * 13 % 5 = 1
+
+Logo, a inserção de chaves fica da seguinte forma:
+[0] = E -> null
+[1] = A -> U -> T -> O -> N -> null  
+[2] = Q -> null
+[3] = S -> null
+[4] = Y -> I -> null
+
+

@@ -1,0 +1,6 @@
+A estrutura Heap consiste de uma árvore binária completa que pode ser de dois tipos: heap máximo ou mínimo. Em um heap máximo, a chave de cada nó é maior/igual do que a de sua subárvores e a raiz contém a maior chave. Em um heap mínimo, a chave de cada nó é menor/igual do que a de suas subárvores e a raiz contém a menor chave. 
+
+Além disso, heap é uma árvore completa, o que significa que ela é preenchida da esquerda para a direita e um nível é sempre preenchido completamente antes que se inicie um próximo nível. 
+
+Na pasta desse arquivo também deixei uma foto de exemplo de heap
+máxima feito por mim no excalidraw

@@ -1,0 +1,5 @@
+2. A) Não é árvore rubro negra. Existem caminhos da raiz às folhas com quantidades diferentes de ligações negras, o que não pode acontecer.
+
+2. B) É árvore rubro-negra.
+
+2. C) É árvore rubro-negra. 
